@@ -1,0 +1,138 @@
+main {
+  margin-top: 30px;
+  height: calc(100% - 195px);
+}
+
+.tabs {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.tab-list {
+  display: block;
+  font-size: 18px;
+  list-style: none;
+  box-sizing: border-box;
+  position: relative;
+  height: auto;
+  padding: 0 118px 0 74px;
+  margin: 1px;
+  top: 2px;
+}
+
+.tab-list button {
+  border: none;
+  background: none;
+  color: #333;
+  line-height: 28px;
+  font-size: 21px;
+  color: #4c4c4c;
+  font-weight: normal;
+  padding: 0.5rem 1rem;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.tab-list button:hover {
+  font-weight: 600;
+}
+.tab-list button.active {
+  font-weight: 600;
+  color: #1269d6;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid #dadada;
+  border-bottom: none;
+  border-top: 3px solid #1269d6;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  z-index: 2;
+  background: #ffffff;
+}
+
+.tab-content {
+  height: calc(100% - 52px);
+  width: calc(100% - 150px);
+  display: block;
+  border: 1px solid #dadada;
+  background: #f7f7f7;
+  position: relative;
+  margin: 0 75px;
+  font-family: AvenirBook;
+  z-index: 1;
+}
+
+.tab-content > div {
+  display: none;
+}
+
+.tab-content > div.active {
+  display: flex;
+  width: 100%;
+  height: calc(100% - 35px);
+}
+
+.tab-content-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.tab-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.footer {
+  background: gray;
+}
+
+.image-container {
+  .left-container {
+    width: 25%;
+    background: #dcdcdc;
+  }
+  .right-container {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+  }
+  .tab-para {
+    overflow-y: scroll;
+
+    color: #333;
+    line-height: 28px;
+    font-size: 21px;
+  }
+}
+
+.activity-container {
+  .left-container {
+    width: 40%;
+    background: orange;
+  }
+  .right-container {
+    width: 60%;
+    background: gray;
+  }
+}
+
+.carousel-container {
+  .left-container {
+    width: 40%;
+    background: blue;
+  }
+  .right-container {
+    width: 60%;
+    background: indigo;
+  }
+}
